@@ -7,3 +7,5 @@ git config --global --add alias.root '!pwd'
 
 git config --global user.name "Thomas B Homburg"
 git config --global user.email "thomas@homburg.dk"
+
+git config --global push.default simple

@@ -17,6 +17,7 @@ bind-key -r 		C-j		resize-pane -D
 bind-key -r 		C-k		resize-pane -U
 bind-key -r 		C-l		resize-pane -R
 
+bind-key			o		break-pane
 
 # colors
 

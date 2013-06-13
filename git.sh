@@ -9,4 +9,5 @@ git config --global --add alias.ci "commit"
 git config --global user.name "Thomas B Homburg"
 git config --global user.email "thomas@homburg.dk"
 
-git config --global push.default simple
+# Not compatible with ubuntu 12.04.*
+# git config --global push.default simple

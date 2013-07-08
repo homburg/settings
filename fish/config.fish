@@ -1,5 +1,7 @@
 . ~/code/settings/fish/vi-mode.fish
 
+. ~/code/settings/fish/virtualfish/virtual.fish
+
 ## paths
 
 # This should work according to https://github.com/fish-shell/fish-shell/issues/527

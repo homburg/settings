@@ -7,4 +7,9 @@
 # set -U fish_user_paths ~/bin
 
 # This works
-set -x PATH ~/bin ~/code/php/lib/bin /var/lib/gems/1.8/bin ~/go/bin $PATH
+# ruby
+set -x PATH /var/lib/gems/1.9/bin /var/lib/gems/1.8/bin $PATH
+
+set -x PATH ~/bin ~/code/php/lib/bin ~/code/go/bin ~/go/bin $PATH
+
+set -x PATH $PATH /sbin

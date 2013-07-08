@@ -1,4 +1,4 @@
-. vi-mode.fish
+. ~/code/settings/fish/vi-mode.fish
 
 ## paths
 

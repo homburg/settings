@@ -6,5 +6,5 @@
 [alias]
 	root = !pwd
 	ci = commit
-[push]
-	default = simple
+# [push]
+# 	default = simple

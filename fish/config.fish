@@ -1,3 +1,5 @@
+# vim: ft=sh :
+
 . ~/code/settings/fish/vi-mode.fish
 
 function fish_user_key_bindings
@@ -19,3 +21,10 @@ set -x PATH /var/lib/gems/1.9/bin /var/lib/gems/1.8/bin $PATH
 set -x PATH ~/bin ~/code/php/lib/bin ~/code/go/bin ~/go/bin $PATH
 
 set -x PATH $PATH /sbin
+
+# Editor
+set -x EDITOR vi
+
+# Aliases
+alias grep="grep --color"
+alias rgrep="grep -r --color --exclude-dir='.svn' --exclude-dir='.git'"

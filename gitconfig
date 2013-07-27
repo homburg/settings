@@ -6,5 +6,9 @@
 [alias]
 	root = !pwd
 	ci = commit
+	co = checkout
+	cl = clone
+	st = status
+	s = status
 # [push]
 # 	default = simple

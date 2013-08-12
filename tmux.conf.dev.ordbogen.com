@@ -32,3 +32,11 @@ set-option -g status-right-fg black
 set-option -g pane-border-fg black
 set-option -g pane-active-border-fg colour208
 
+# Vi mode, and copy
+setw -g mode-keys vi
+unbind [
+bind Escape copy-mode
+unbind p
+bind p paste-buffer
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection

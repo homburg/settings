@@ -1,5 +1,6 @@
 # vim: set autoindent :
 function fish_prompt
+	echo "-"
 	set_color yellow
 	printf '%s' (whoami)
 	set_color normal

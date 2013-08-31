@@ -14,3 +14,5 @@
 	db = "checkout -b"
 # [push]
 # 	default = simple
+[merge]
+	ff = false

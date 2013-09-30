@@ -28,3 +28,7 @@ set -x EDITOR vi
 # Aliases
 alias grep="grep --color"
 alias rgrep="grep -r --color --exclude-dir='.svn' --exclude-dir='.git'"
+
+if test -f ~/.nvm/nvm.sh
+	bash ~/.nvm/nvm.sh
+end

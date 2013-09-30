@@ -10,5 +10,9 @@
 	cl = clone
 	st = status
 	s = status
+	lol = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+	db = "checkout -b"
 # [push]
 # 	default = simple
+[merge]
+	ff = false

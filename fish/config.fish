@@ -16,11 +16,27 @@ end
 
 # This works
 # ruby
-set -x PATH /var/lib/gems/1.9/bin /var/lib/gems/1.8/bin $PATH
+if test -d /var/lib/gems/1.9/bin
+	set -x PATH /var/lib/gems/1.9/bin $PATH
+end
+if test -d /var/Lib/gems/1.8/bin
+	set -x PATH /var/lib/gems/1.8/bin $PATH
+end
 
-set -x PATH ~/bin ~/code/php/lib/bin ~/code/go/bin ~/go/bin $PATH
+# Local php packages
+if test -d ~/code/php/lib/bin
+	set -x PATH ~/code/php/lib/bin $PATH
+end
 
-set -x PATH $PATH /sbin
+# go
+if test -d ~/go/bin
+	set -x PATH ~/go/bin $PATH
+end
+if test -d ~/code/go/bin
+	set -x PATH ~/code/go/bin $PATH
+end
+
+set -x PATH ~/bin $PATH /sbin
 
 # Editor
 set -x EDITOR vi
@@ -28,3 +44,7 @@ set -x EDITOR vi
 # Aliases
 alias grep="grep --color"
 alias rgrep="grep -r --color --exclude-dir='.svn' --exclude-dir='.git'"
+
+if test -f ~/.nvm/nvm.sh
+	bash ~/.nvm/nvm.sh
+end

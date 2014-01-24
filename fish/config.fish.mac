@@ -1,0 +1,5 @@
+# Ruby (brew)
+set -x PATH $PATH /usr/local/opt/ruby/bin
+
+# Put /usr/local/bin before /usr/bin, sez brew
+set -x PATH /usr/local/bin $PATH

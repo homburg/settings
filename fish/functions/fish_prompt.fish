@@ -32,7 +32,7 @@ function fish_prompt
 
 
 	set_color yellow
-	printf '⚡'
+	printf 'λ'
 
 	set_color normal
 	printf ' '

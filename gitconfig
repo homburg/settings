@@ -12,7 +12,7 @@
 	s = status
 	lol = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
 	db = "checkout -b"
-[merge]
-	ff = false
 [include]
 	path = ".gitconfig.local"
+[push]
+	default = current

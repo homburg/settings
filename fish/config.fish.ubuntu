@@ -1,0 +1,12 @@
+# vim: ft=sh :
+set -x TERM xterm-256color
+
+# ruby
+if test -d /var/lib/gems/1.9/bin
+	set -x PATH /var/lib/gems/1.9/bin $PATH
+end
+if test -d /var/Lib/gems/1.8/bin
+	set -x PATH /var/lib/gems/1.8/bin $PATH
+end
+
+set -x PATH $PATH /sbin

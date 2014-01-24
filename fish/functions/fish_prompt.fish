@@ -1,12 +1,13 @@
 # vim: set autoindent :
+echo "loaded..."
 function fish_prompt
 	echo "-"
-	set_color yellow
+	set_color $fish_color_user
 	printf '%s' (whoami)
 	set_color normal
 	printf ' at '
 
-	set_color magenta
+	set_color $fish_color_hostname
 	printf '%s' (hostname|cut -d . -f 1)
 	set_color normal
 	printf ' in '

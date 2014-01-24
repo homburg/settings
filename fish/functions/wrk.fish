@@ -1,3 +1,8 @@
 function wrk -d "Go to working dir"
-	cd $WRK/$argv
+	if [ 0 -eq (count $argv) ]
+		cd ~/code/
+		return
+	end
+
+	cd ~/code/$argv
 end

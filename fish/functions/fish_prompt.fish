@@ -4,23 +4,23 @@ function fish_prompt
 	echo "-"
 	set_color $fish_color_user
 	printf '%s' (whoami)
-	set_color normal
+	set_color $fish_color_prompt_base
 	printf ' at '
 
 	set_color $fish_color_hostname
 	printf '%s' (hostname|cut -d . -f 1)
-	set_color normal
+	set_color $fish_color_prompt_base
 	printf ' in '
 
 	set_color $fish_color_cwd
 	printf '%s' (prompt_pwd)
-	set_color normal
+	set_color $fish_color_prompt_base
 
-	set -g __fish_git_prompt_color_prefix red
-	set -g __fish_git_prompt_color_branch green
-	set -g __fish_git_prompt_color_suffix red
+	set -g __fish_git_prompt_color_prefix $fish_color_git_branch_wrap
+	set -g __fish_git_prompt_color_branch $fish_color_git_branch
+	set -g __fish_git_prompt_color_suffix $fish_color_git_branch_wrap
 	printf " *%s" (__fish_git_prompt)
-	set_color normal
+	set_color $fish_color_prompt_base
 
 	# Line 2
 	echo
@@ -32,7 +32,7 @@ function fish_prompt
 	end
 
 
-	set_color yellow
+	set_color $fish_color_prompt_prompt
 	printf 'λ'
 
 	set_color normal

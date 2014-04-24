@@ -1,0 +1,18 @@
+! Currently
+!
+! Working on sharing mac keyboard from linux to mac client
+! - [* '] -> Does not work with alt gr on client
+! - Issues:
+!   - alt/alt-gr/mac-alt
+!
+! xmodmap comment...
+keycode  38 = a A a A at masculine
+keycode  49 = dollar asciitilde grave asciitilde threequarters paragraph
+
+! Map Caps_Lock to Super_R
+! and map Super_R to mod3
+clear Lock
+clear Mod3
+remove Mod4 = Super_R
+keycode  66 = Super_R NoSymbol Super_R
+add Mod3 = Super_R

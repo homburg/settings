@@ -27,7 +27,19 @@ remove Mod4 = Super_R
 keycode  66 = Super_R NoSymbol Super_R
 add Mod3 = Super_R
 
+! Map Right Cmd to altgr key
+! Right alt
+!   keycode 108 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+! Original right Cmd
+!   keycode 134 = Super_R NoSymbol Super_R
+! Remove Super mappings (see above)
+remove Mod3 = Super_R
+keycode 134 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+add Mod3 = Super_R
+
+
 ! "Regular" layout
+
 ! keycode   8 =
 ! keycode   9 = Escape NoSymbol Escape
 ! keycode  10 = 1 exclam 1 exclam exclamdown onesuperior

@@ -8,7 +8,7 @@
 	ci = commit
 	co = checkout
 	cl = clone
-	st = status
+	st = status -s
 	s = status
 	lol = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
 	db = "checkout -b"

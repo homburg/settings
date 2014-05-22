@@ -31,3 +31,5 @@ alias rgrep="grep -r --color --exclude-dir='.svn' --exclude-dir='.git'"
 if test -f ~/.nvm/nvm.sh
 	bash ~/.nvm/nvm.sh
 end
+
+set -gx GRADLE_OPTS "-Dorg.gradle.daemon=true"

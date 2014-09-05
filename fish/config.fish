@@ -15,12 +15,7 @@ if test -d ~/code/php/lib/bin
 end
 
 # go
-if test -d ~/go/bin
-	set -x PATH ~/go/bin $PATH
-end
-if test -d ~/code/go/bin
-	set -x PATH ~/code/go/bin $PATH
-end
+set -x GOPATH $HOME
 
 # Editor
 set -x EDITOR vi

@@ -1,8 +1,5 @@
 [color]
 	ui = true
-[user]
-	name = Thomas B Homburg
-	email = thomas@homburg.dk
 [alias]
 	root = !pwd
 	ci = commit

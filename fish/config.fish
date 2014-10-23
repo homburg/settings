@@ -29,3 +29,8 @@ if test -f ~/.nvm/nvm.sh
 end
 
 set -gx GRADLE_OPTS "-Dorg.gradle.daemon=true"
+
+set -U fish_user_abbreviations \
+	"gco=git checkout" \
+	"gaa=git add --all" \
+	"gba=git branch -a"

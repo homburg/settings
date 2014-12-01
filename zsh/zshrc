@@ -45,7 +45,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,3 +85,19 @@ bindkey -v
 # VIM text objects
 source $SETTINGS_DIR/zsh/opp.zsh
 source $SETTINGS_DIR/zsh/opp/*.zsh
+
+export GOPATH="$HOME"
+if [ -d "$GOPATH/bin" ] ; then
+    PATH="$GOPATH/bin:$PATH"
+fi
+
+export EDITOR=vi
+
+export PATH="$PATH:/sbin"
+
+# Aliases
+## git
+alias gg="git remote prune origin; git branch --merged | xargs git branch -d"
+
+# Reverse history search i vi mode
+bindkey "^R" history-incremental-search-backward
